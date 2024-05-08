@@ -7,6 +7,10 @@ public class Jatek {
 private static Random rnd = new Random();
 private static final int GYORSITO=5;
 
+public static final String PIROS = "\033[0;31m"; 
+public static final String ZOLD = "\033[0;32m"; 
+public static final String KEK = "\033[0;34m";
+
     public Jatek() {
         start();
     }
@@ -56,6 +60,10 @@ private static final int GYORSITO=5;
             cs2Tav=cs2Tav+lep2;
             cs3Tav=cs3Tav+lep3;
             
+            cs1.kirajzol(PIROS,"CSIGA1", lep1, cs1Tav);
+            cs2.kirajzol(ZOLD,"CSIGA2", lep2, cs2Tav);
+            cs3.kirajzol(KEK,"CSIGA3", lep3, cs3Tav);
+            System.out.println("");
         }
     }
     
