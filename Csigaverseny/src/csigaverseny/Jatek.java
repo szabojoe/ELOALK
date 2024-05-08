@@ -5,6 +5,7 @@ import java.util.Random;
 public class Jatek {
     
 private static Random rnd = new Random();
+private static final int GYORSITO=5;
 
     public Jatek() {
         start();
@@ -25,6 +26,24 @@ private static Random rnd = new Random();
         System.out.println("Fogadok, hogy a "+csigak[fogadas]+" fog nyerni!\n");
         
         for (int i = 1; i < 6; i++) {
+            switch(Jatek.rnd.nextInt(Jatek.GYORSITO)){
+                case 0:
+                    cs1.gyorsitotKap(true);
+                    System.out.println(i+". menetben a Csiga1 kap gyorsitot");
+                    break;
+                case 1:
+                    cs2.gyorsitotKap(true);
+                    System.out.println(i+". menetben a Csiga2 kap gyorsitot");
+                    break;
+                case 2:
+                    cs3.gyorsitotKap(true);
+                    System.out.println(i+". menetben a Csiga3 kap gyorsitot");
+                    break;
+                case 3,4:
+                    System.out.println(i+". menetben semelyik csiga se kap gyorsitot");
+                    break;
+            }
+               
             
         }
     }
