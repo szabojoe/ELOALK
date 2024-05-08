@@ -81,6 +81,20 @@ public static final String KEK = "\033[0;34m";
             System.out.println("csiga1 nyert:"+csiga1Nyert);
             System.out.println("csiga2 nyert:"+csiga2Nyert);
             System.out.println("csiga3 nyert:"+csiga3Nyert);
+            System.out.println("");
+            
+            switch(fogadas){
+                case 0:
+                    fogadasNyert = csiga1Nyert == true;
+                    break;
+                case 1:
+                    fogadasNyert = csiga2Nyert == true;
+                    break;
+                case 2:
+                    fogadasNyert = csiga3Nyert == true;
+                    break;
+            }
+            System.out.println("Fogadas nyert: " +fogadasNyert);            
     }
     
 }
