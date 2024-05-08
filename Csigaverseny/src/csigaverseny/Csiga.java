@@ -1,0 +1,5 @@
+package csigaverseny;
+
+class Csiga {
+    
+}
