@@ -44,6 +44,17 @@ private static final int GYORSITO=5;
                     break;
             }
                
+            cs1.lep();
+            cs2.lep();
+            cs3.lep();
+            
+            lep1=cs1.getLep();
+            lep2=cs2.getLep();
+            lep3=cs3.getLep();
+            
+            cs1Tav=cs1Tav+lep1;
+            cs2Tav=cs2Tav+lep2;
+            cs3Tav=cs3Tav+lep3;
             
         }
     }
