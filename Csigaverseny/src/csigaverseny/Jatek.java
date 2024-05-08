@@ -24,6 +24,9 @@ private static Random rnd = new Random();
         String[] csigak = new String[]{"CSIGA1","CSIGA2","CSIGA3"};
         System.out.println("Fogadok, hogy a "+csigak[fogadas]+" fog nyerni!\n");
         
+        for (int i = 1; i < 6; i++) {
+            
+        }
     }
     
 }
