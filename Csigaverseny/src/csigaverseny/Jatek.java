@@ -64,7 +64,23 @@ public static final String KEK = "\033[0;34m";
             cs2.kirajzol(ZOLD,"CSIGA2", lep2, cs2Tav);
             cs3.kirajzol(KEK,"CSIGA3", lep3, cs3Tav);
             System.out.println("");
+            
         }
+            int[] tavok = new int[]{cs1Tav,cs2Tav,cs3Tav};
+            for (int elem : tavok) {
+                if(elem>nyertesTav){
+                    nyertesTav=elem;
+                }
+            }
+            
+            csiga1Nyert = nyertesTav == cs1Tav;
+            csiga2Nyert = nyertesTav == cs2Tav;
+            csiga3Nyert = nyertesTav == cs3Tav;
+            
+            System.out.println("EREDMENY:");
+            System.out.println("csiga1 nyert:"+csiga1Nyert);
+            System.out.println("csiga2 nyert:"+csiga2Nyert);
+            System.out.println("csiga3 nyert:"+csiga3Nyert);
     }
     
 }
